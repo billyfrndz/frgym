@@ -1,0 +1,100 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FRGym</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.jpg"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="benefit.html">BENEFIT</a></li>
+                    <li><a href="trainer.html">TRAINER</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+            <h1>Our Benefits</h1>
+    </section>
+    
+    
+<!---------- benefit ----------->
+    
+<section class="benefit">
+    <h1>Benefit We Offer</h1>
+    <p>This fitness center provide your with multiple benefit.</p>
+    <div class="row">
+        <div class="benefit-col">
+            <h3>Experienced Trainers</h3>
+            <p>Our trainers is experienced in body building, some of them are young and often contesting in an event.</p>
+        </div>
+        <div class="benefit-col">
+            <h3>Good Enviroment</h3>
+            <p>We think fitness center is not an only place to do workout, it's can be a place to socials aswell and we believe our fitness center is really people friendly</p>
+        </div>
+        <div class="benefit-col">
+            <h3>Complete Facilities</h3>
+            <p>Our fitness center is consist of complete tools and machine to fullfill your workout everyday, we got clean bathroom and foodcourt too.</p>
+        </div>
+    </div>
+</section>
+    
+<!---------- Facilities ---------->
+    
+<section class="facility">
+    <h1>Our Facilities</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="row">
+            <div class="facility-col">
+                <img src="images/weightlifting.jpg">
+                <h3>Weight Lifting</h3>
+                <p>Overall of our tools consist weight lifting tools and machine. chest, shoulder, back or legs. we got all you need</p>
+            </div>
+            <div class="facility-col">
+                <img src="images/cardio.jpg">
+                <h3>Cardio</h3>
+                <p>We got the old trusty treadmill. help you to burn that extra calories of your body, we have multiple of that machine too so you didn't to wait long</p>
+            </div>
+            <div class="facility-col">
+                <img src="images/food court.jpg">
+                <h3>Food Court</h3>
+                <p>Our food court provide members a healthy food and cheap after their workout. veggies or meat, our food court consist both.</p>
+            </div>
+        </div>
+</section>
+
+    
+<!-------- footer ---------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>©2023 FRGym, Developed by Billy Fernandez on behalf of FRGym Management</p>
+    <div class="icons">
+        <a href="https://www.instagram.com/frgym_fitnesscenter/"><i class="fa fa-instagram"></i></a>
+    </div>
+</section>    
+  
+  
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>  
+    
+</body>
+</html>    

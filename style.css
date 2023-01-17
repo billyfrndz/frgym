@@ -130,6 +130,7 @@ nav .fa{
     text-align: center;
     padding-top: 100px;
 }
+
 h1{
     font-size: 36px;
     font-weight: 600;
@@ -145,6 +146,7 @@ p{
     margin-top: 5%;
     display: flex;
     justify-content: space-between;  
+    align-items: center;
 }
   
 .benefit-col{
@@ -163,6 +165,10 @@ h3{
 }
 .benefit-col:hover{
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.pricetag {
+    color: rgb(47, 235, 47);
 }
 
 @media (max-width:700px){
@@ -521,6 +527,7 @@ h3{
     font-weight: 400;
     
 }
+
 .contact-col input, .contact-col textarea{
     width: 100%;
     padding: 15px;

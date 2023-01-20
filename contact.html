@@ -61,10 +61,10 @@
                 <div class="contact-col">
                     <h2>Registration Form</h5>
                     <br>
-                    <form method="post" action="contact-form-handler.php">
-                    <input type="text" name="name" placeholder="Name" required>
-                    <input type="tel" name="tel" placeholder="Telephone Number" required>
-                    <textarea rows="8" name="address" placeholder="Address" required></textarea>
+                    <form name="submit-to-google-sheet">
+                    <input type="text" name="Nama" placeholder="Name" max="20" required>
+                    <input type="tel" name="Telefon" placeholder="Telephone Number" max="20" required>
+                    <textarea rows="8" name="Alamat" placeholder="Address" required></textarea>
                     <button type="submit" class="hero-btn red-btn">Submit</button>
                     </form> 
                     <p>We're gonna contact you for further registration process.</p>
@@ -76,8 +76,11 @@
 
     <section class="cta">
     
-        <h1>Have a question?</h1>
-        <a href="https://wa.me/6285171032309?text=Saya%20Ingin%20Bertanya%20Mengenai%20Di%20FRGym" target="_blank"><img src="images/WhatsAppButtonGreenLarge.png" alt=""></a>
+        <h1>Have a question?
+            <br>
+            Ask Us Directly
+        </h1>
+        <a href="https://wa.me/6285171032309?text=Saya%20Ingin%20Bertanya%20Mengenai%20FRGym" target="_blank"><img src="images/WhatsAppButtonGreenLarge.png" alt=""></a>
  
     </section>    
 <!-------- footer ---------->
@@ -102,6 +105,18 @@
     function hideMenu() {
         navLinks.style.right = "-200px";
     }
+
+   
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyUs4TUyW-02ODr8rDq0nQ0AKt3t-j7uA1EUuIaLFqCWg5_em37ioQtDRqhRixrt0ox/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    form.addEventListener('submit', e => {
+    e.preventDefault()
+    alert("Form Submitted")
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+    })
 </script> 
     
 </body>
